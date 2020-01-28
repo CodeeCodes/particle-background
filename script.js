@@ -3,7 +3,7 @@ const particles = [];
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   //create more particles based on window size
-  const particlesLength = Math.floor(window.innerWidth / 10);
+  const particlesLength = Math.floor(window.innerWidth / 14);
   //loop through
   for (let i = 0; i < particlesLength; i++) {
     particles.push(new Particle());
@@ -26,9 +26,9 @@ class Particle {
     //position
     this.position = createVector(random(width), random(height));
     //velocity
-    this.velocity = createVector(random(-10, 10), random(-10, 10));
+    this.velocity = createVector(random(-1, 2), random(-2, 1));
     //size
-    this.size = 10;
+    this.size = 20;
   }
 
   //create velocity (how much it is going to move)
@@ -40,7 +40,7 @@ class Particle {
   //draw particle, size and color
   draw() {
     noStroke();
-    fill("rgba(255, 255, 255, 0.5)");
+    fill("rgba(255, 255, 255, 0.8)");
     circle(this.position.x, this.position.y, this.size);
   }
   edges() {
@@ -55,7 +55,6 @@ class Particle {
   //connect the particles
   checkParticles(particles) {
     particles.forEach(particle => {
-      console.log(particle);
       const d = dist(
         this.position.x,
         this.position.y,
@@ -63,8 +62,8 @@ class Particle {
         particle.position.y
       );
 
-      if (d < 120) {
-        stroke("rgba(255,255,255,0.1");
+      if (d < 130) {
+        stroke("rgba(255, 255, 255, 0.2");
         line(
           this.position.x,
           this.position.y,
