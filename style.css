@@ -17,9 +17,6 @@ body {
 *:after {
   box-sizing: inherit;
 }
-h1 {
-  color: rgb(23, 140, 250);
-}
 
 img {
   border-radius: 50%;
@@ -30,6 +27,7 @@ img {
   transform: translate(-50%, -50%);
 }
 h1 {
+  color: rgb(23, 140, 250);
   width: 100%;
   position: fixed;
   top: 80%;
