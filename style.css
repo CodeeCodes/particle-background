@@ -18,8 +18,9 @@ body {
   box-sizing: inherit;
 }
 h1 {
-  color: rgb(255, 0, 0);
+  color: rgb(23, 140, 250);
 }
+
 img {
   border-radius: 50%;
   width: 40%;
@@ -34,4 +35,10 @@ h1 {
   top: 80%;
   left: 79%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    top: 67%;
+    left: 63%;
+  }
 }
