@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+html,
+body {
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  height: 100vh;
+  box-sizing: border-box;
+  background: fixed;
+}
+body {
+  background-color: #000000;
+}
+/* Enforces border-box for whole site */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h1 {
+  color: rgb(255, 0, 0);
+}
